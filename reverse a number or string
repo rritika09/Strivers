@@ -1,0 +1,14 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+print("Reverse a number")
+n = 44237808
+
+n = str(n)
+a=[]
+print(n[7])
+print(range(len(n),1,-1))
+for i in range(len(n)-1,-1,-1):
+    a.append(n[i])
+print(a)
+print(''.join(a))
