@@ -8,3 +8,8 @@ while n>0:
     n=n//10
     x=x+1
 print(x)
+
+
+n=44237808
+n = str(n)
+print("length of number is ",len(n))
