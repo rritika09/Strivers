@@ -30,4 +30,19 @@ print(range(m+1,1,-1))
 for i in range(min(m+1,n+1),1,-1):
     if m%i==0 & n%i==0:
         m_hm.append(i)
+        break
 print(m_hm)
+
+
+#Euclidean algorithm
+while m>1 or n>1:
+    if m>n:
+        m=m%n
+    else:
+        n=n%m
+    if m==0:
+        print("GCP is ",n)
+        break
+    else:
+        print("GCP is ",m)
+        break
