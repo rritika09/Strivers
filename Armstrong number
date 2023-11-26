@@ -1,0 +1,13 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Armstrong number")
+m = 153
+s = str(m)
+s_len = len(s)
+total = 0
+for i in range(s_len):
+    total = (int(s[i])**s_len)+total
+if total == m:
+    print("It is an armstrong number")
+    
+print(pow(2,5))
