@@ -1,6 +1,6 @@
 # Online Python compiler (interpreter) to run Python online.
 # Write Python 3 code in this online editor and run it.
-print("Hello world")
+print("Palindrome in String")
 
 a = 'cac'
 b = []
@@ -9,6 +9,22 @@ for i in range(len(a)-1,-1,-1):
 print(b)
 c = ''.join(b)
 if c==a:
-    print(c," Palindrome")
+    print(c ," Palindrome")
 else:
-    print(c," Not a Palindrome")
+    print(c, " Not a Palindrome")
+    
+print("Palindrome in number")
+n = 34243
+rev=0
+while n>0:
+    unit = n%10
+    rev = rev*10 + unit
+    n = n//10
+n = 34243
+print("Reverse number is",rev)
+print("Number is",n)
+print(n==rev)
+if n == rev:
+    print("Is a Palindrome")
+else:
+    print("Not a Palidrome")
