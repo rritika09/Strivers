@@ -28,3 +28,4 @@ if n == rev:
     print("Is a Palindrome")
 else:
     print("Not a Palidrome")
+### why is complexity O(logN) in case of number reversal
