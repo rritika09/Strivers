@@ -1,0 +1,33 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("GCP of two numbers")
+#Bruteforce
+m = 121
+n = 11
+m_hm,n_hm=[],[]
+for i in range(1,m+1):
+    #print(m,i)
+    if m%i==0:
+        m_hm.append(i)
+for j in range(1,n+1):
+    #print(n,j,n/j)
+    if n%j==0:
+        n_hm.append(j)
+print(m_hm,n_hm)
+for i in range(len(m_hm)):
+    for j in range(len(n_hm)):
+        if m_hm[i]==n_hm[j]:
+            print(m_hm[i])
+
+#Optimised
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("GCP of two numbers")
+m = 121
+n = 11
+m_hm,n_hm=[],[]
+print(range(m+1,1,-1))
+for i in range(min(m+1,n+1),1,-1):
+    if m%i==0 & n%i==0:
+        m_hm.append(i)
+print(m_hm)
