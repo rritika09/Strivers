@@ -1,0 +1,13 @@
+def isprime(n):
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            m=0
+        else:
+            m=1
+    if m==0:
+        print("Number is not prime")
+            # if i != n/i:
+            #     print(int(n/i))
+    print()
+if __name__ == "__main__":
+    isprime(17)
