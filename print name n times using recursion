@@ -1,0 +1,9 @@
+
+def printname(x,name):
+    if x>0:
+        #x=x-1
+        print(x,name)
+        printname(x-1,name)
+
+if __name__ == "__main__":
+    printname(108,"Ram")
