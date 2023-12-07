@@ -1,0 +1,14 @@
+print("Largest ele in an array")
+
+lst = [3,5,2,6,23,66,5,32]
+start = 0
+for i in range(1,len(lst)):
+    large = lst[start]
+    if lst[i] > lst[start]:
+        large = lst[i]
+        start=i
+print("Largest element is ",large)
+
+Complexity:
+Time : O(N)
+Space : O(1)
