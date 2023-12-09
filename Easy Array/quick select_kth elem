@@ -1,0 +1,24 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+lst = [3,1,54,-6,23,14]
+#lst = [3,2,1,5,6,4]
+p, low, high = lst[0], 0, len(lst)
+i, j = 0, len(lst)-1
+print(i,j)
+while i <= j:
+    print(lst[i],lst[j])
+    if lst[i] < p and lst[j] > p:
+        lst[i], lst[j] = lst[j], lst[i]
+        i = i+1
+        j = j-1
+        print(lst,i,j)
+    if lst[i] >= p:
+        i = i+1
+    if lst[j] <= p:
+        j = j-1
+lst[j], lst[low] = lst[low], lst[j]
+
+
+print("Pivot is ",lst[j])
+print(lst)
