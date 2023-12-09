@@ -1,0 +1,16 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+#Check if array is sorted
+
+lst = [ 12,3,4,4,10,12]
+new = []
+
+for i in range(len(lst)):
+    if lst[i] not in new:
+        new.append(lst[i])
+        
+print(new)
