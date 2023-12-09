@@ -1,0 +1,31 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+lst = [3,1,54,-6,23,14]
+start_large, start_small = 0,0
+large = lst[start_large]
+sec_large = lst[start_large]
+small = lst[start_small]
+sec_small = lst[start_small]
+for i in range(len(lst)):
+    if lst[i] > lst[start_large]:
+        large = lst[i]
+        start_large = i
+    elif lst[i] < lst[start_small]:
+        small = lst[i]
+        start_small = i
+print("Largest element is ",large)
+print("Smallest element is ",small)
+start_large, start_small = 0,0
+for j in range(len(lst)):
+    if lst[j] > lst[start_large] and lst[j] != large:
+        print("large ", large)
+        print("lst[i] ",lst[j])
+        sec_large = lst[j]
+        start_large = j
+    elif lst[j] < lst[start_small] and lst[j] != small:
+        sec_small = lst[j]
+        start_small = j
+
+print("Second smallest is ",sec_small)
+print("Second largest is ",sec_large)
