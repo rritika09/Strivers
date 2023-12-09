@@ -1,0 +1,32 @@
+
+#Move zeroes to end
+
+lst = [0,3,14,0,3,0,3]
+cnt = 0
+new=[]
+for i in range(len(lst)):
+    if lst[i]==0:
+        cnt = cnt+1
+for j in range(len(lst)):
+    if lst[j]>0:
+        new.append(lst[j])
+for k in range(cnt):
+    new.append(0)
+print(new)
+#========================================
+
+i = 0
+j = len(lst)-1
+while i <= j:
+    if lst[i] == 0 and lst[j]>0:
+        lst[i], lst[j] = lst[j], lst[i]
+        i = i+1
+        j = j-1
+    if lst[i] > 0:
+        i = i+1
+    if lst[j] == 0:
+        j = j-1
+print(lst)
+        
+        
+        
