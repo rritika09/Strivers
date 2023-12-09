@@ -1,0 +1,14 @@
+
+#Left rotate an array by one place
+
+lst = [ 12,3,4,4,10,12]
+print("Rotate by k ele")
+new = []
+k = 2
+n = len(lst)-k
+for i in range(n,len(lst)):
+    new.append(lst[i])
+
+for i in range(n):
+    new.append(lst[i])
+print(new)
