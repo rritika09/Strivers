@@ -1,4 +1,4 @@
-
+# THINK of better space complexity
 #Left rotate an array by one place
 
 lst = [ 12,3,4,4,10,12]
