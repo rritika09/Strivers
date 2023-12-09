@@ -1,0 +1,13 @@
+
+#missing number in an array
+
+lst = [1,2,4,5]
+
+i, j = 0,1
+while j < len(lst):
+    if (lst[j] - lst[i]) > 1:
+        print("Missing number is ",lst[i]+1)
+        break
+    else:
+        i = i+1
+        j = j+1
